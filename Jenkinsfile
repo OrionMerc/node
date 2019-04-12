@@ -2,6 +2,7 @@
 
 pipeline {
   agent any
+  tools {nodejs "NodeGrupoOST"}
   stages {
      stage('Docker Build') {
             agent any
