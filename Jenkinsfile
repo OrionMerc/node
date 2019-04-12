@@ -15,7 +15,7 @@ pipeline {
         } 
     stage ('build'){
       steps{
-        sh 'npm build /tools/doc'
+        sh 'npm build tools/doc'
       }
     }
     }
