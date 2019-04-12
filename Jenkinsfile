@@ -11,7 +11,7 @@ pipeline {
         stage('Docker Build') {
             agent any
             steps {
-                sh 'npm build node/tools/doc/package.json'
+                sh 'npm build tools/doc/package.json'
             }
         }      
     }
