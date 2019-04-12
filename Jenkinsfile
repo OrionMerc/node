@@ -3,6 +3,9 @@
 pipeline {
   agent any
   tools {nodejs "NodeGrupoOST"}
+  environment{
+    HOME = '.'
+  }
   stages {
      stage('Docker Build') {
             agent any
