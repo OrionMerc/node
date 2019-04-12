@@ -3,12 +3,7 @@
 pipeline {
   agent any
   stages {
-    stage('Build') {
-      steps{
-        sh 'npm install'
-      }
-    }
-        stage('Docker Build') {
+     stage('Docker Build') {
             agent any
             steps {
                 sh 'npm build tools/doc/package.json'
