@@ -12,7 +12,7 @@ pipeline {
         } 
     stage ('build'){
       steps{
-        sh 'npm build /var/lib/jenkins/workspace/atividade_grupo_orion_surya_thiago@2/node/tools/doc/package.json'
+        sh 'npm build /var/lib/jenkins/workspace/atividade_grupo_orion_surya_thiago@2/node/tools/doc'
       }
     }
     }
