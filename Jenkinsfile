@@ -15,6 +15,7 @@ pipeline {
         sh 'npm build /var/lib/jenkins/workspace/atividade_grupo_orion_surya_thiago@2/tools/doc/package.json'
       }
     }
+    }
     post {
         always {
             echo 'This will always run'
