@@ -10,7 +10,7 @@ pipeline {
      stage('Docker Build') {
             agent any
             steps {
-                sh 'npm install'
+                sh 'npm install ./tools/doc/'
             }
         } 
     stage ('build'){
